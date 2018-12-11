@@ -1,0 +1,51 @@
+body, html {
+height: 100%;
+width: 100%;
+margin: 0px;
+padding: 0px;
+}
+/*configura el div main*/
+#main {
+height: 80%;
+/*modificamos el tamaño del div main que es el 80% del total de la pagina*/
+min-width: 33.3%;
+display: -webkit-flex;
+display: flex;
+flex-flow: row;
+/*modificamos los elementos de la pagina para que quede de la forma y orden que queramos*/
+}
+/*configura el div mein*/
+#mein {
+	order: 2;
+	min-width: 66.6%;
+}
+/*configura el l'article dentro del div mein*/
+#mein article {
+background-image: url(../images/article.jpg);
+min-height: 87.5%;
+/*es el tamaño del article, 87.5% respecto al 80% del total*/
+}
+/*modificamos el footer que esta dentro del div mein*/
+#mein footer {
+background: #C56;
+min-height: 12.5%;
+}
+/*modificamos el nav*/
+nav {
+display: block;
+/*se muestra en bloque*/
+min-height: 10%;
+background: #888;
+}
+#main aside {
+background: #CCF;
+flex: 1 6 20%;
+order: 1;
+}
+header{
+display: block;
+min-height: 10%;
+background: #FC6;
+}
+
+/* canvia la distribució de la plana posant el nav davall del header, i el aside a l'esquerra de l'article i el footer, el footer el mantenim a baix :) */
